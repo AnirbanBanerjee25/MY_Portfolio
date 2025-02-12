@@ -15,9 +15,16 @@ const Form = () => {
         <input type="text" name="subject" required />
 
         <label>Message</label>
-        <textarea name="message" rows="6" placeholder="Type your message here" required></textarea>
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Type your message here"
+          required
+        ></textarea>
 
-        <button className="btn" type="submit">Submit</button>
+        <button className="btn" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );

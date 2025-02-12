@@ -10,20 +10,26 @@ const AboutContent = () => {
       <div className="left">
         <h1>Who am I?</h1>
         <p>
-          I am a Full Stack Developer. I create responsive secure websites for
-          my clients.
+          I am a Full Stack Developer. I create responsive and secure websites
+          tailored to my clients' needs.
         </p>
-        <Link to="/contact">
-          <button className="btn">Contact</button>
-        </Link>
+        {/* Button Container for Proper Alignment */}
+        <div className="button-container">
+          <Link to="/contact">
+            <button className="btn">Contact</button>
+          </Link>
+          <a href="/Resume_Anirban_Banerjee.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="btn">View Resume</button>
+          </a>
+        </div>
       </div>
       <div className="right">
         <div className="img-container">
           <div className="img-stack top">
-            <img src={react1} className="img" alt="image"></img>
+            <img src={react1} className="img" alt="React Project" />
           </div>
           <div className="img-stack bottom">
-            <img src={react2} className="img" alt="image"></img>
+            <img src={react2} className="img" alt="React UI" />
           </div>
         </div>
       </div>
